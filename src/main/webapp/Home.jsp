@@ -82,7 +82,7 @@
         <div class="row">
             <footer class="footer">
                 <div class="container">
-                    Created by Scott Muth
+                    Created by Priya
                 </div>
             </footer>
         </div>
