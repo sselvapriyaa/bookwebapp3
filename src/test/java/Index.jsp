@@ -1,8 +1,9 @@
 <%-- 
-    Document   : Home
-    Created on : Sep 28, 2016, 4:31:26 PM
+    Document   : Index
+    Created on : Sep 28, 2016, 7:09:05 PM
     Author     : Gladwin
 --%>
+
 
 <%@page contentType="text/html" pageEncoding="UTF-8"%>
 <%@taglib prefix="c" uri="http://java.sun.com/jsp/jstl/core" %>

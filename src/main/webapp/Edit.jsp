@@ -16,13 +16,14 @@
             
         <link href="myCss.css" rel="stylesheet" type="text/css"/>
     </head>
+    
     <body>
         <h1 class="text-center">Author List</h1>
                 <div class="row">
                     <div class ="container">
                         <div id="cont">
                             <div class="col-md-4 col-md-offset-4" id="content">
-                                <form id="update" name="update" method="POST" action="AuthorController">
+                                <form id="update" name="update" method="POST" action="AuthorController1">
                                     <h3>Update Author by ID</h3>
                                     <p>This will return all records in Database - Including update.</p>
                                     <input type="text" name="authorId" value="${author.authorId}" placeholder="Record ID" readonly/>
