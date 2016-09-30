@@ -14,8 +14,8 @@ import javax.servlet.annotation.WebServlet;
 import javax.servlet.http.HttpServlet;
 import javax.servlet.http.HttpServletRequest;
 import javax.servlet.http.HttpServletResponse;
-import edu.wctc.saa.bookwebapp3.model.Author;
-import edu.wctc.saa.bookwebapp3.model.AuthorService;
+import edu.wctc.saa.bookwebapp.model.Author;
+import edu.wctc.saa.bookwebapp.model.AuthorService;
 import java.sql.SQLException;
 import java.util.Date;
 import java.util.logging.Level;
@@ -128,11 +128,11 @@ public class AuthorController extends HttpServlet {
             request.setAttribute("authors", authors);
 
         } 
-        
-        // Forward to destination page
-        RequestDispatcher dispatcher
-                = getServletContext().getRequestDispatcher(destination);
-        dispatcher.forward(request, response);
+//        
+//        // Forward to destination page
+//        RequestDispatcher dispatcher
+//                = getServletContext().getRequestDispatcher(destination);
+//        dispatcher.forward(request, response);
     
 
 

@@ -3,8 +3,9 @@
  * To change this template file, choose Tools | Templates
  * and open the template in the editor.
  */
-package edu.wctc.saa.bookwebapp3.model;
+package edu.wctc.saa.bookwebapp.model;
 
+import edu.wctc.saa.bookwebapp.model.DBStrategy;
 import java.io.Serializable;
 import java.sql.Connection;
 import java.sql.DriverManager;
@@ -280,7 +281,7 @@ public class MySqlDBStrategy implements DBStrategy {
 //        return psmt.executeUpdate();
 //    }
 
-    //Testing
+        //Testing
     public static void main(String[] args) throws ClassNotFoundException, SQLException {
         DBStrategy db = new MySqlDBStrategy();
         db.openConnection("com.mysql.jdbc.Driver", "jdbc:mysql://localhost:3306/book", "root", "admin");

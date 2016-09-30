@@ -3,11 +3,11 @@
     <modelVersion>4.0.0</modelVersion>
 
     <groupId>edu.wctc.saa</groupId>
-    <artifactId>bookwebApp3</artifactId>
+    <artifactId>bookwebapp3</artifactId>
     <version>1.0-SNAPSHOT</version>
     <packaging>war</packaging>
 
-    <name>bookwebApp3</name>
+    <name>bookwebapp3</name>
 
     <properties>
         <endorsed.dir>${project.build.directory}/endorsed</endorsed.dir>

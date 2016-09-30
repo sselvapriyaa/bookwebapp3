@@ -3,7 +3,8 @@
  * To change this template file, choose Tools | Templates
  * and open the template in the editor.
  */
-package edu.wctc.saa.bookwebapp3.controller1;
+package edu.wctc.saa.bookwebapp.controller;
+
 
 import java.io.IOException;
 import java.util.List;
@@ -13,8 +14,8 @@ import javax.servlet.annotation.WebServlet;
 import javax.servlet.http.HttpServlet;
 import javax.servlet.http.HttpServletRequest;
 import javax.servlet.http.HttpServletResponse;
-import edu.wctc.saa.bookwebapp3.model.Author;
-import edu.wctc.saa.bookwebapp3.model.AuthorService;
+import edu.wctc.saa.bookwebapp.model.Author;
+import edu.wctc.saa.bookwebapp.model.AuthorService;
 import java.sql.SQLException;
 import java.util.Date;
 import java.util.logging.Level;
@@ -25,8 +26,8 @@ import java.util.logging.Logger;
  *
  * @author Gladwin
  */
-@WebServlet(name = "AuthorController1", urlPatterns = {"/AuthorController1"})
-public class AuthorController1 extends HttpServlet {
+@WebServlet(name = "AuthorController", urlPatterns = {"/AuthorController"})
+public class AuthorController extends HttpServlet {
 AuthorService aus;
     
     private static final String ADD_PAGE = "Add.jsp";
@@ -115,7 +116,7 @@ AuthorService aus;
             List<Author> authors = aus.getAuthorList();
             request.setAttribute("authors", authors);
 
-        } 
+         
         
         
         // Forward to destination page
@@ -123,6 +124,7 @@ AuthorService aus;
                 = getServletContext().getRequestDispatcher(destination);
         dispatcher.forward(request, response);
     
+}
 
 
     // <editor-fold defaultstate="collapsed" desc="HttpServlet methods. Click on the + sign on the left to edit the code.">
@@ -140,9 +142,9 @@ AuthorService aus;
     try {
         processRequest(request, response);
     } catch (ClassNotFoundException ex) {
-        Logger.getLogger(AuthorController1.class.getName()).log(Level.SEVERE, null, ex);
+        Logger.getLogger(AuthorController.class.getName()).log(Level.SEVERE, null, ex);
     } catch (SQLException ex) {
-        Logger.getLogger(AuthorController1.class.getName()).log(Level.SEVERE, null, ex);
+        Logger.getLogger(AuthorController.class.getName()).log(Level.SEVERE, null, ex);
     }
     }
 
@@ -160,9 +162,9 @@ AuthorService aus;
     try {
         processRequest(request, response);
     } catch (ClassNotFoundException ex) {
-        Logger.getLogger(AuthorController1.class.getName()).log(Level.SEVERE, null, ex);
+        Logger.getLogger(AuthorController.class.getName()).log(Level.SEVERE, null, ex);
     } catch (SQLException ex) {
-        Logger.getLogger(AuthorController1.class.getName()).log(Level.SEVERE, null, ex);
+        Logger.getLogger(AuthorController.class.getName()).log(Level.SEVERE, null, ex);
     }
     }
 
